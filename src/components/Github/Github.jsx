@@ -1,6 +1,6 @@
 import React, { useEffect, useState }  from "react";
 import { useLoaderData } from "react-router-dom";
-
+import pic from '../../assets/pic.png'
 
 function Github(){
     const data=useLoaderData()
@@ -16,7 +16,7 @@ function Github(){
 
     return(
         <div className='text-center m-4  bg-gray-600 text-white p-4 text-3xl'>Github Followers:{data.followers}
-        <img src={pic.png} alt="Git picture" width="300"/>
+        <img src={pic} alt="Git picture" width="300"/>
         </div>
     )
 }
